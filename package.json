@@ -1,0 +1,37 @@
+{
+    "name": "node-api-design",
+    "version": "1.0.0",
+    "description": "Design API using Express and Mongodb",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ahmadmoawad/node-api-design.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ahmadmoawad/node-api-design/issues"
+    },
+    "homepage": "https://github.com/ahmadmoawad/node-api-design#readme",
+    "dependencies": {
+        "bcrypt": "^4.0.1",
+        "body-parser": "^1.19.0",
+        "colors": "^1.4.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-jwt": "^5.3.1",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.15",
+        "method-override": "^3.0.0",
+        "mongoose": "^5.9.3",
+        "morgan": "^1.9.1"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^7.1.0",
+        "supertest": "^4.0.2"
+    }
+}
