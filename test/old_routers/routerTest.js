@@ -1,3 +1,5 @@
+# Testing the API using supertest, chai and mocha
+
 const app = require('../server/server-routers');
 const request = require('supertest');
 const expect = require('chai').expect;
