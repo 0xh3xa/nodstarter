@@ -13,7 +13,7 @@ Technologies and libraries used:
 4. MongoDB
 5. Lodash
 6. Morgan middleware
-7. Body praser
+7. Body parser
 8. Method-override
 9. bcrypt
 10. express-jwt
@@ -46,7 +46,7 @@ test/
 Nodstarter uses the environment variables
 --------------
 
-Nodstarter starts searching first for the following environment variables if found them will use them, if not will use the default. The default for NODE_ENV is development, NODE_PORT is 3000 and JWT 'Gambell'
+Nodstarter starts searching first for the following environment variables if found them will use them if not will use the default. The default for NODE_ENV is development, NODE_PORT is 3000 and JWT 'Gambell'
 You can choose NODE_ENV from one of the following options (development, production, testing)
 
 1. NODE_ENV
@@ -62,7 +62,7 @@ $ npm install nodstarter
 ```
 
 <details>
-<summary><strong>Running Tests</strong></summary>
+<summary><strong>Running Tests (future plan)</strong></summary>
 
 Running and reviewing unit tests is a great way to get familiarized with a library and its API. You can install dependencies and run tests with the following command:
 
@@ -77,17 +77,19 @@ Project intent
 --------------
 Nodstarter project aims to be like <a href="https://start.spring.io/">Spring Initializr</a> to minimize the configuration for developing Node.js apps.
 
-Have new idea
---------------
+Have a new idea
+-------------------
 This project welcomes new ideas, you can reach me at this <a href="mailto:ahmadmoawad2@yahoo.com">email</a>
 
 Future plans
 --------------
-We need to make the libraries dynamic and the programmer can choose what libraries want and how many rest APIs, models, Database engine and back-bone tests for rest APIs.
+- Add API test
+- Option to add libraries dynamically
+- The programmer can choose what libraries want and how many rest APIs, models, Database engine and back-bone tests for rest APIs.
 
 ## License Summary
 
-You can copy and paste the Apache 2.0 license summary from below.
+You can copy and paste the Apache 2.0 license summary below.
 
 ```
 Copyright 2020 by Nodstarter
@@ -104,4 +106,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
