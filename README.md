@@ -1,12 +1,11 @@
-Nodstarter
-==========
-[![Javascript](https://img.shields.io/static/v1?label=language&message=javascript&color=green&style=flat)](https://www.npmjs.com/package/nodstarter) [![NPM](https://img.shields.io/static/v1?label=package_manager&message=npm&color=blue&style=flat)](https://www.npmjs.com/package/nodstarter)
+# Nodstarter
+
+[![Javascript](https://img.shields.io/static/v1?label=lanuage&message=javascript&color=green&style=flat)](https://www.npmjs.com/package/nodstarter) [![NPM](https://img.shields.io/static/v1?label=package_manager&message=npm&color=blue&style=flat)](https://www.npmjs.com/package/nodstarter)
 
 Nodstarter provides rapid rest APIs development, it offers preconfigured and secured routers using JWT, error middleware handler, MongoDB models, MongoDB connection and logger with APIs testing.
 This project aims to help writing the rest APIs backend quickly.
 
-Technologies and libraries used:
---------------------------------
+## Technologies and libraries used:
 1. Node.js
 2. Express framework
 3. Mongoose ORM
@@ -22,8 +21,7 @@ Technologies and libraries used:
 13. nodemon
 14. Testing libraries: Supertest, Chai and Mocha
 
-Project structure
------------------
+## Project structure
 The project contains two folder server and test
 
 ```
@@ -37,14 +35,9 @@ server/
 ├── middleware
 ├── util
 └── package.json
-
-test/
-├── apiTest.js
-└── dbTester.js
 ```
 
-Nodstarter uses the environment variables
---------------
+## Nodstarter uses the environment variables
 
 Nodstarter starts searching first for the following environment variables if found them will use them if not will use the default. The default for NODE_ENV is development, NODE_PORT is 3000 and JWT 'Gambell'
 You can choose NODE_ENV from one of the following options (development, production, testing)
@@ -53,16 +46,20 @@ You can choose NODE_ENV from one of the following options (development, producti
 2. NODE_PORT
 3. JWT
 
-NPM Install
---------------
+## NPM Install
+
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
 $ npm install nodstarter
 ```
 
-<details>
-<summary><strong>Running Tests (future plan)</strong></summary>
+## How to use
+
+![Demo](https://github.com/ahmadmoawad/nodstarter/blob/develop/asset/demo.gif)
+
+
+## Running Tests (future plan)
 
 Running and reviewing unit tests is a great way to get familiarized with a library and its API. You can install dependencies and run tests with the following command:
 
@@ -70,22 +67,23 @@ Running and reviewing unit tests is a great way to get familiarized with a libra
 $ npm install && npm test
 ```
 
-</details>
 
-
-Project intent
---------------
+## Project intent
 Nodstarter project aims to be like <a href="https://start.spring.io/">Spring Initializr</a> to minimize the configuration for developing Node.js apps.
 
-Have a new idea
--------------------
+## Have a new idea
 This project welcomes new ideas, you can reach me at this <a href="mailto:ahmadmoawad2@yahoo.com">email</a>
 
-Future plans
---------------
+## Future plans
 - Add API test
 - Option to add libraries dynamically
 - The programmer can choose what libraries want and how many rest APIs, models, Database engine and back-bone tests for rest APIs.
+
+
+## Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. 
 
 ## License Summary
 
