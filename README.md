@@ -56,7 +56,7 @@ $ npm install nodstarter
 
 ## How to use
 
-![Demo](https://github.com/ahmadmoawad/nodstarter/blob/develop/asset/demo.gif)
+![Demo](https://github.com/ahmadmoawad/nodstarter/raw/develop/asset/demo.gif)
 
 
 ## Running Tests (future plan)
