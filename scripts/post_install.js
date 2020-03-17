@@ -7,12 +7,25 @@ var pjson = JSON.parse(json_content);
 
 pjson.scripts.postinstall = '';
 pjson.description = '';
-pjson.name = 'api starter';
+pjson.name = 'api_starter';
 pjson.author = '';
 pjson.version = '1.0.0';
 pjson.repository = '';
 pjson.bugs = '';
 pjson.homepage = '';
+
+delete pjson._resolved;
+delete pjson._shasum;
+delete pjson._spec;
+delete pjson._where;
+delete pjson._requiredBy;
+delete pjson._requested;
+delete pjson._phantomChildren;
+delete pjson._location;
+delete pjson._integrity;
+delete pjson._inBundle;
+delete pjson._from;
+delete pjson._id;
 
 const parent_path = path.resolve(__dirname, '..');
 const project_path = path.resolve(__dirname, '../../../');
@@ -72,8 +85,8 @@ var copy = function(src, dest) {
 
 copyDir(parent_path, project_path);
 
+fs.writeFileSync(package_path, JSON.stringify(pjson, null, 4), 'utf8');
+
 rmdir(parent_path);
 
-rmdir(project_path+"/scripts");
-
-fs.writeFileSync(package_path, JSON.stringify(pjson, null, 4), 'utf8');
+rmdir(project_path + "/scripts");

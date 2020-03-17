@@ -1,11 +1,11 @@
 {
-    "name": "nodestarter",
-    "version": "1.0.0",
+    "name": "nodstarter",
+    "version": "1.0.6",
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
         "start": "nodemon index.js",
-        "postinstall": "node script/post_install.js"
+        "postinstall": "node scripts/post_install.js"
     },
     "repository": {
         "type": "git",
