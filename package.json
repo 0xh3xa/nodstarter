@@ -1,6 +1,6 @@
 {
-    "name": "ttt_test_ttt_test-1",
-    "version": "1.0.0",
+    "name": "nodstarter",
+    "version": "0.1.6",
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
