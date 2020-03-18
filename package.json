@@ -9,7 +9,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ahmadmoawad/nodestarter.git"
+        "url": "git+https://github.com/ahmadmoawad/nodstarter.git"
     },
     "keywords": [
         "backend",
@@ -31,9 +31,9 @@
     "author": "Ahmad M.",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/ahmadmoawad/nodestarter/issues"
+        "url": "https://github.com/ahmadmoawad/nodstarter/issues"
     },
-    "homepage": "https://github.com/ahmadmoawad/nodestarter#readme",
+    "homepage": "https://github.com/ahmadmoawad/nodstarter#readme",
     "dependencies": {
         "bcrypt": "^4.0.1",
         "body-parser": "^1.19.0",
