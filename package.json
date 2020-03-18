@@ -1,6 +1,6 @@
 {
     "name": "nodstarter",
-    "version": "1.0.10",
+    "version": "1.0.0",
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
@@ -31,6 +31,7 @@
     "author": "Ahmad M.",
     "license": "ISC",
     "bugs": {
+        "email": "ahmadmoawad2@yahoo.com",
         "url": "https://github.com/ahmadmoawad/nodstarter/issues"
     },
     "homepage": "https://github.com/ahmadmoawad/nodstarter#readme",
