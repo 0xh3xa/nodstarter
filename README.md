@@ -1,6 +1,11 @@
 # Nodstarter
 
-[![Javascript](https://img.shields.io/static/v1?label=lanuage&message=javascript&color=green&style=flat)](https://www.npmjs.com/package/nodstarter) [![NPM](https://img.shields.io/static/v1?label=package_manager&message=npm&color=blue&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![starter](https://img.shields.io/static/v1?label=node&message=starter&color=blue&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![Nodejs](https://img.shields.io/static/v1?label=Node&message=js&color=orange&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![NPM](https://img.shields.io/static/v1?label=npm&message=6.14.2&color=pink&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![Linux](https://img.shields.io/static/v1?label=Linux&message=pass&color=green&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![license](https://img.shields.io/static/v1?label=license&message=Apache2&color=tan&style=flat)](https://www.npmjs.com/package/nodstarter)
 
 Nodstarter provides rapid rest APIs development, it offers preconfigured and secured routers using JWT, error middleware handler, MongoDB models, MongoDB connection and logger with APIs testing.
 This project aims to help writing the rest APIs backend quickly.
