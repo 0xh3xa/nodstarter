@@ -1,6 +1,6 @@
 {
-    "name": "nodstarter",
-    "version": "1.0.10",
+    "name": "ttt_test_ttt_test",
+    "version": "0.1.6",
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
@@ -51,5 +51,6 @@
         "chai": "^4.2.0",
         "mocha": "^7.1.0",
         "supertest": "^4.0.2"
-    }
+    },
+    "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }

@@ -6,19 +6,21 @@ const parent_path = path.resolve(__dirname, '..'); // nodstarter folder inside n
 const project_path = path.resolve(__dirname, '../../../'); // user project folder
 const script_path = project_path + "/scripts";
 
+var programmer_package_json = require(project_path+'/package.json')
+
 var updatePackageJson = function(){
 	const json_content = fs.readFileSync(package_json_path, 'utf8');
 	var pjson = JSON.parse(json_content);
 	
-	pjson.scripts.postinstall = '';
-	pjson.description = '';
-	pjson.name = 'api_starter';
-	pjson.author = '';
-	pjson.version = '1.0.0';
-	pjson.repository = '';
+	pjson.description = programmer_package_json.description;
+	pjson.name = programmer_package_json.name;
+	pjson.author = programmer_package_json.author;
+	pjson.version = programmer_package_json.version;
+	pjson.repository = programmer_package_json.repository;
 	pjson.bugs = '';
 	pjson.homepage = '';
 	
+	delete pjson.scripts.postinstall;
 	delete pjson._resolved;
 	delete pjson._shasum;
 	delete pjson._spec;
@@ -63,7 +65,7 @@ var rmDirRecursive = function(dir) {
 		}catch(err){
 		}
 	} else {
-		console.warn("warn: " + dir + " not exists");
+		console.warn("Warn: " + dir + " not exists");
 	}
 };
 
