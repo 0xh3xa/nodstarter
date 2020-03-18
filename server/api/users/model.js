@@ -1,9 +1,8 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-var bcrypt = require('bcrypt');
-var config = require('../../config');
-
-var logger = require('../../util/logger');
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const bcrypt = require('bcrypt');
+const config = require('../../config');
+const logger = require('../../util/logger');
 
 logger.log('config db url: ' + config.db.url);
 mongoose.connect(config.db.url, {
@@ -12,7 +11,7 @@ mongoose.connect(config.db.url, {
     useCreateIndex: true
 });
 
-var UserSchema = new Schema({
+const UserSchema = new Schema({
     username: {
         type: String,
         unique: true,

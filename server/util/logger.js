@@ -1,9 +1,9 @@
 require('colors');
-var _ = require('lodash');
-var config = require('../config');
-var loggerApply = console.log.bind(console);
+const _ = require('lodash');
+const config = require('../config');
+const loggerApply = console.log.bind(console);
 
-var logger = {
+const logger = {
     log: (text) => {
         var args = _.toArray(text)
             .map(function (arg) {

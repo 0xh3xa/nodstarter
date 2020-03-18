@@ -1,11 +1,11 @@
-var expressJwt = require('express-jwt');
-var config = require('../config');
-var logger = require('../util/logger');
-var jwt = require('jsonwebtoken');
-var checkToken = expressJwt({
+const expressJwt = require('express-jwt');
+const config = require('../config');
+const logger = require('../util/logger');
+const jwt = require('jsonwebtoken');
+const checkToken = expressJwt({
     secret: config.secrets.jwt
 });
-var User = require('../api/users/model');
+const User = require('../api/users/model');
 exports.decodeToken = () => {
     return (req, res, next) => {
         if (req.query && req.query.hasOwnProperty('access_token')) {

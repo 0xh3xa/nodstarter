@@ -1,7 +1,7 @@
-var User = require('./model');
-var _ = require('lodash');
-var signToken = require('../../auth').signToken;
-var logger = require('../../util/logger');
+const User = require('./model');
+const _ = require('lodash');
+const signToken = require('../../auth').signToken;
+const logger = require('../../util/logger');
 
 exports.params = (req, res, next, id) => {
     User.findById(id)

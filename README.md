@@ -33,33 +33,33 @@ The project contains two folder server and test
 server/
  └── index.js
  └── config
-        └── index.js
-        └── development.js
-        └── production.js
-        └── testing.js
+          └── index.js
+          └── development.js
+          └── production.js
+          └── testing.js
  └── auth
         └── index.js
         └── controller.js
         └── routers.js
  └──api
       └── Users
-           └── router.js
-           └── controller.js
-           └── model.js
+               └── router.js
+               └── controller.js
+               └── model.js
       └── Posts
-           └── router.js
-           └── controller.js
-           └── model.js
+               └── router.js
+               └── controller.js
+               └── model.js
       └── Category
-           └── router.js
-           └── controller.js
-           └── model.js
+                 └── router.js
+                 └── controller.js
+                 └── model.js
  └──middleware
-           └── index.js
-           └── err.js
+             └── index.js
+             └── err.js
  └──util
-           └── createRouter.js
-           └── logger.js
+        └── createRouter.js
+        └── logger.js
  └── package.json
 ```
 

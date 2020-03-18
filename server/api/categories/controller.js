@@ -1,6 +1,6 @@
-var Category = require('./model');
-var _ = require('lodash');
-var logger = require('../../util/logger');
+const Category = require('./model');
+const _ = require('lodash');
+const logger = require('../../util/logger');
 
 exports.params = (req, res, next, id) => {
     Category.findById(id)

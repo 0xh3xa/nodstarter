@@ -1,6 +1,6 @@
-var _ = require('lodash');
+const _ = require('lodash');
 
-var config = {
+const config = {
     dev: 'development',
     test: 'testing',
     prod: 'production',
@@ -16,7 +16,7 @@ var config = {
 process.env.NODE_ENV = process.env.NODE_ENV || config.dev;
 config.env = process.env.NODE_ENV;
 
-var envConfig;
+const envConfig;
 try {
     envConfig = require('./' + config.env);
     envConfig = envConfig || {};
