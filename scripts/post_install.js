@@ -12,11 +12,11 @@ var updatePackageJson = function(){
 	const json_content = fs.readFileSync(package_json_path, 'utf8');
 	var pjson = JSON.parse(json_content);
 	
-	pjson.description = programmer_package_json.description;
-	pjson.name = programmer_package_json.name;
-	pjson.author = programmer_package_json.author;
-	pjson.version = programmer_package_json.version;
-	pjson.repository = programmer_package_json.repository;
+	pjson.description = programmer_package_json.description || '';
+	pjson.name = programmer_package_json.name || '';
+	pjson.author = programmer_package_json.author || '';
+	pjson.version = programmer_package_json.version || '';
+	pjson.repository = programmer_package_json.repository || '';
 	pjson.bugs = '';
 	pjson.homepage = '';
 	
