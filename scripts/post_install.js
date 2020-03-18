@@ -45,7 +45,7 @@ var mkdir = function(dir) {
 	}
 };
 
-var rmdir = function(dir) {
+var rmDirRecursive = function(dir) {
 	if (fs.existsSync(dir)) {
 		var list = fs.readdirSync(dir);
 		for(var i = 0; i < list.length; i++) {
@@ -53,7 +53,7 @@ var rmdir = function(dir) {
 			var stat = fs.lstatSync(filename);
 			if(filename == "." || filename == "..") {
 			} else if(stat.isDirectory()) {
-				rmdir(filename);
+				rmDirRecursive(filename);
 			} else {
 				fs.unlinkSync(filename);
 			}
@@ -65,6 +65,7 @@ var rmdir = function(dir) {
 };
 
 var copyDir = function(src, dest) {
+	if(dir.indexOf('scripts')) return;
 	mkdir(dest);
 	var files = fs.readdirSync(src);
 	for(var i = 0; i < files.length; i++) {
@@ -88,6 +89,6 @@ copyDir(parent_path, project_path);
 
 updatePackageJson()
 
-rmdir(parent_path);
+rmDirRecursive(parent_path);
 
-rmdir(script_path);
+//rmdir(script_path);
