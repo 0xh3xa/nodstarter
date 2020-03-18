@@ -11,6 +11,7 @@
         "type": "git",
         "url": "git+https://github.com/ahmadmoawad/nodstarter.git"
     },
+    "publishConfig": { "registry": "https://npm.pkg.github.com/" },
     "keywords": [
         "backend",
         "starter",
@@ -53,6 +54,5 @@
         "chai": "^4.2.0",
         "mocha": "^7.1.0",
         "supertest": "^4.0.2"
-    },
-    "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+    }
 }
