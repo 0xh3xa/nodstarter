@@ -1,6 +1,6 @@
 {
     "name": "nodstarter",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
