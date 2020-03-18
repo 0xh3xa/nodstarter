@@ -1,6 +1,6 @@
 {
     "name": "nodstarter",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
@@ -12,8 +12,8 @@
         "url": "git+https://github.com/ahmadmoawad/nodstarter.git"
     },
     "publishConfig": {
-        "registry":"https://registry.npmjs.org/"
-      },
+        "registry": "https://registry.npmjs.org/"
+    },
     "keywords": [
         "backend",
         "starter",
