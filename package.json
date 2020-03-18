@@ -1,17 +1,15 @@
 {
     "name": "nodstarter",
-    "version": "1.0.0",
+    "version": "1.0.12",
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon index.js"
+        "start": "nodemon index.js",
+	"post_install": "scripts/post_install.js"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ahmadmoawad/nodstarter.git"
-    },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/@ahmadmoawad"
     },
     "keywords": [
         "backend",
@@ -31,10 +29,8 @@
         "runner"
     ],
     "author": "Ahmad M.",
-    "license": "ISC",
+    "license": "Apache License 2.0",
     "bugs": {
-        "author": "Ahmad M.",
-        "email": "ahmadmoawad2@yahoo.com",
         "url": "https://github.com/ahmadmoawad/nodstarter/issues"
     },
     "homepage": "https://github.com/ahmadmoawad/nodstarter#readme",
