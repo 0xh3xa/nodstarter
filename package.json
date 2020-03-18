@@ -10,7 +10,10 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ahmadmoawad/nodstarter.git"
-    },
+    }, 
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@ahmadmoawad"
+      },
     "keywords": [
         "backend",
         "starter",
