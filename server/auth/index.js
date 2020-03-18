@@ -36,9 +36,6 @@ exports.verifyUser = () => {
         var username = req.body.username;
         var password = req.body.password;
 
-        logger.log('the username: ' + username);
-        logger.log('the password: ' + password);
-
         if (!username || !password) {
             res.status(400).send('You need a username ans password');
             return;
