@@ -63,6 +63,7 @@ var rmDirRecursive = function(dir) {
 		try{
 			fs.rmdirSync(dir);
 		}catch(err){
+			console.log(err)
 		}
 	} else {
 		console.warn("Warn: " + dir + " not exists");
