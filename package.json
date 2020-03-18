@@ -4,16 +4,15 @@
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon index.js",
-        "postinstall": "node scripts/post_install.js"
+        "start": "nodemon index.js"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ahmadmoawad/nodstarter.git"
-    }, 
+    },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@ahmadmoawad"
-      },
+    },
     "keywords": [
         "backend",
         "starter",
