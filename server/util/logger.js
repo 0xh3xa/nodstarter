@@ -5,17 +5,20 @@ const loggerApply = console.log.bind(console);
 
 const logger = {
     log: (text) => {
-        var args = text.trim().split(" ")
-            .map(function (arg) {
-                if (typeof arg === 'object') {
-                    var string = JSON.stringify(arg);
-                    return string.magenta;
-                } else {
-                    arg += '';
-                    return arg.white;
-                }
+      var args = '';
+      if(text && typeof(text)==='string'){
+         args = text.trim().split(" ")
+        .map(function (arg) {
+                arg += '';
+                return arg.white;
             });
-
+      }else {
+           args = _.toArray(text)
+           .map(function (arg) {
+             var string = JSON.stringify(arg);
+             return string.yellow;
+            });
+          }
         if (config.env === config.dev) {
             loggerApply.apply(console, args);
         }
