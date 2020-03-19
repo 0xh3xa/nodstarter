@@ -5,14 +5,14 @@ const loggerApply = console.log.bind(console);
 
 const logger = {
     log: (text) => {
-        var args = _.toArray(text)
+        var args = text.trim().split(" ")
             .map(function (arg) {
                 if (typeof arg === 'object') {
                     var string = JSON.stringify(arg);
                     return string.magenta;
                 } else {
                     arg += '';
-                    return arg.blue;
+                    return arg.white;
                 }
             });
 
