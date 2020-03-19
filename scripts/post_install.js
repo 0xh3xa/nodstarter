@@ -11,15 +11,16 @@ var programmer_package_json = require(project_path+'/package.json')
 var updatePackageJson = function(){
 	const json_content = fs.readFileSync(package_json_path, 'utf8');
 	var pjson = JSON.parse(json_content);
-	
+
 	pjson.description = programmer_package_json.description || '';
 	pjson.name = programmer_package_json.name || '';
 	pjson.author = programmer_package_json.author || '';
 	pjson.version = programmer_package_json.version || '';
 	pjson.repository = programmer_package_json.repository || '';
-	pjson.bugs = '';
+	pjson.license = programmer_package_json.license || 'ISC';
+  pjson.bugs = '';
 	pjson.homepage = '';
-	
+
 	delete pjson.scripts.postinstall;
 	delete pjson._resolved;
 	delete pjson._shasum;
