@@ -142,9 +142,10 @@ exports.signToken = (id) => {
 #### Calling sign in
 
 ```sh
-curl --header "Content-Type: application/json" --request POST --data '{"username":"test_user_4","password":"12345"}'   http://localhost:3000/auth/signin
+curl --header "Content-Type: application/json" --request POST --data '{"username":"test_user_4","password":"12345"}' http://localhost:3000/auth/signin
 ```
-, output
+, `output`
+
 ```
 {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTY2NjQwODYzMGE0NDE3MThiMjNhMzgiLCJpYXQiOjE1ODQ2Mzc4NDIsImV4cCI6MTU4NDY1MjI0Mn0.MODWP86ebc8XOMjDGyuvNCWWoKnQhpZpl81ynFGExG8"}
 ```
