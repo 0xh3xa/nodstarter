@@ -152,7 +152,7 @@ curl --header "Content-Type: application/json" --request POST --data '{"username
 
 ## Nodstarter uses the environment variables
 
-Nodstarter starts searching first for the following environment variables if found them will use them if not will use the default. The default for NODE_ENV is development, NODE_PORT is 3000 and JWT 'Gambell'
+Nodstarter starts searching first for the following environment variables if found them will use them if not will use the default. The default values for `NODE_ENV` is development, `NODE_PORT` is 3000 and `JWT` is Gambell
 You can choose NODE_ENV from one of the following options (development, production, testing)
 
 1. NODE_ENV
