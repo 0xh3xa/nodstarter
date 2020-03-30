@@ -1,11 +1,11 @@
-var expressJwt = require('express-jwt');
-var config = require('../config');
-var logger = require('../util/logger');
-var jwt = require('jsonwebtoken');
-var checkToken = expressJwt({
+const expressJwt = require('express-jwt');
+const config = require('../config');
+const logger = require('../util/logger');
+const jwt = require('jsonwebtoken');
+const checkToken = expressJwt({
     secret: config.secrets.jwt
 });
-var User = require('../api/users/model');
+const User = require('../api/users/model');
 exports.decodeToken = () => {
     return (req, res, next) => {
         if (req.query && req.query.hasOwnProperty('access_token')) {
@@ -36,11 +36,8 @@ exports.verifyUser = () => {
         var username = req.body.username;
         var password = req.body.password;
 
-        logger.log('the username: ' + username);
-        logger.log('the password: ' + password);
-
         if (!username || !password) {
-            res.status(400).send('You need a username ans password');
+            res.status(400).send('You need a username and password');
             return;
         }
 
@@ -50,9 +47,11 @@ exports.verifyUser = () => {
             .then((user) => {
                 logger.log('the selected user from DB: ' + user);
                 if (!user) {
-                    res.status(401).send('No user with the given username');
+                    logger.log('No user with the given username');
+                    res.status(401).send('Invalid username or password');
                 } else if (!user.authenticate(password)) {
-                    res.status(401).send('wrong password');
+                    logger.log('Invalid password');
+                    res.status(401).send('Invalid username or password');
                 } else {
                     req.user = user;
                     next();

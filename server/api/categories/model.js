@@ -1,6 +1,6 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-var config = require('../../config');
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const config = require('../../config');
 
 mongoose.connect(config.db.url, {
     useNewUrlParser: true,
@@ -8,7 +8,7 @@ mongoose.connect(config.db.url, {
     useCreateIndex: true
 });
 
-var categoryModel = new Schema({
+const categoryModel = new Schema({
     category: {
         type: String,
         unique: true,

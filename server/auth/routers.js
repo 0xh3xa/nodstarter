@@ -1,6 +1,6 @@
-var router = require('express').Router();
-var verifyUser = require('./index').verifyUser;
-var controller = require('./controller');
+const router = require('express').Router();
+const verifyUser = require('./index').verifyUser;
+const controller = require('./controller');
 
 router.post('/signin', verifyUser(), controller.sigin);
 

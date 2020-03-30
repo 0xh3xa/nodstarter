@@ -1,6 +1,6 @@
-var _ = require('lodash');
+const _ = require('lodash');
 
-var config = {
+const config = {
     dev: 'development',
     test: 'testing',
     prod: 'production',

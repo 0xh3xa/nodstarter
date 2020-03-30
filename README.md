@@ -1,8 +1,13 @@
 # Nodstarter
 
-[![Javascript](https://img.shields.io/static/v1?label=lanuage&message=javascript&color=green&style=flat)](https://www.npmjs.com/package/nodstarter) [![NPM](https://img.shields.io/static/v1?label=package_manager&message=npm&color=blue&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![starter](https://img.shields.io/static/v1?label=node&message=starter&color=blue&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![Nodejs](https://img.shields.io/static/v1?label=Node&message=js&color=orange&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![NPM](https://img.shields.io/static/v1?label=npm&message=6.14.2&color=pink&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![Linux](https://img.shields.io/static/v1?label=Linux&message=pass&color=green&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://www.npmjs.com/package/nodstarter)
+[![License](https://img.shields.io/static/v1?label=license&message=Apache2&color=tan&style=flat)](https://www.npmjs.com/package/nodstarter)
 
-Nodstarter provides rapid rest APIs development, it offers preconfigured and secured routers using JWT, error middleware handler, MongoDB models, MongoDB connection and logger with APIs testing.
+Nodstarter is starter application to provide rapid rest APIs development, it offers pre-configured and secured routers using JWT, error middleware handler, MongoDB models, MongoDB connection and logger with APIs testing.
 This project aims to help writing the rest APIs backend quickly.
 
 ## Technologies and libraries used:
@@ -26,37 +31,166 @@ The project contains two folder server and test
 
 ```
 server/
-├── config
-├── auth
-├── api
-|   ├── Users
-|   ├── Posts
-|   ├── Categories
-├── middleware
-├── util
-└── package.json
+ └── index.js
+ └── config
+          └── index.js
+          └── development.js
+          └── production.js
+          └── testing.js
+ └── auth
+        └── index.js
+        └── controller.js
+        └── routers.js
+ └──api
+      └── Users
+               └── router.js
+               └── controller.js
+               └── model.js
+      └── Posts
+               └── router.js
+               └── controller.js
+               └── model.js
+      └── Category
+                 └── router.js
+                 └── controller.js
+                 └── model.js
+ └──middleware
+             └── index.js
+             └── err.js
+ └──util
+        └── createRouter.js
+        └── logger.js
+ └── package.json
+```
+
+#### Code in auth/index.js
+```js
+const expressJwt = require('express-jwt');
+const config = require('../config');
+const logger = require('../util/logger');
+const jwt = require('jsonwebtoken');
+const checkToken = expressJwt({
+    secret: config.secrets.jwt
+});
+const User = require('../api/users/model');
+exports.decodeToken = () => {
+    return (req, res, next) => {
+        if (req.query && req.query.hasOwnProperty('access_token')) {
+            req.headers.authorization = 'Bearer ' + req.query.access_token;
+        }
+        checkToken(req, res, next);
+    };
+};
+
+exports.getFreshUser = () => {
+    return (req, res, next) => {
+        User.findById(req.user._id)
+            .then((user) => {
+                if (!user) {
+                    res.status(400).send('Unanuthorized');
+                } else {
+                    req.user = user;
+                    next();
+                }
+            }, (err) => {
+                next(err);
+            });
+    };
+};
+
+exports.verifyUser = () => {
+    return (req, res, next) => {
+        var username = req.body.username;
+        var password = req.body.password;
+
+        if (!username || !password) {
+            res.status(400).send('You need a username and password');
+            return;
+        }
+
+        User.findOne({
+                username: username
+            })
+            .then((user) => {
+                logger.log('the selected user from DB: ' + user);
+                if (!user) {
+                    logger.log('No user with the given username');
+                    res.status(401).send('Invalid username or password');
+                } else if (!user.authenticate(password)) {
+                    logger.log('Invalid password');
+                    res.status(401).send('Invalid username or password');
+                } else {
+                    req.user = user;
+                    next();
+                }
+            }, (err) => {
+                next(err);
+            });
+    };
+};
+
+exports.signToken = (id) => {
+    logger.log("id is: " + id);
+    return jwt.sign({
+        _id: id
+    }, config.secrets.jwt, {
+        expiresIn: config.expireTime
+    });
+};
+```
+
+#### Calling sign in
+
+```sh
+curl --header "Content-Type: application/json" --request POST --data '{"username":"test_user_4","password":"12345"}' http://localhost:3000/auth/signin
+```
+, `output`
+
+```
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTY2NjQwODYzMGE0NDE3MThiMjNhMzgiLCJpYXQiOjE1ODQ2Mzc4NDIsImV4cCI6MTU4NDY1MjI0Mn0.MODWP86ebc8XOMjDGyuvNCWWoKnQhpZpl81ynFGExG8"}
 ```
 
 ## Nodstarter uses the environment variables
 
-Nodstarter starts searching first for the following environment variables if found them will use them if not will use the default. The default for NODE_ENV is development, NODE_PORT is 3000 and JWT 'Gambell'
+Nodstarter starts searching first for the following environment variables if found them will use them if not will use the default. The default values for `NODE_ENV` is development, `NODE_PORT` is 3000 and `JWT` is Gambell
 You can choose NODE_ENV from one of the following options (development, production, testing)
 
 1. NODE_ENV
 2. NODE_PORT
 3. JWT
 
-## NPM Install
+## Install
 
-Install with [npm](https://www.npmjs.com/):
+1. Init with [NPM](https://www.npmjs.com/):
+
+```sh
+$ npm init
+```
+
+2. Install:
 
 ```sh
 $ npm install nodstarter
 ```
 
+3. Start:
+
+```sh
+$ npm start
+```
+
+, or use in one-line:
+
+```sh
+$ npm init; npm install nodstarter; npm start
+```
+
+## Before you run
+Please make sure that the `MongoDB daemon` is up and running
+
 ## How to use
 
-![Demo](https://github.com/ahmadmoawad/nodstarter/blob/develop/asset/demo.gif)
+![Demo](https://github.com/ahmadmoawad/nodstarter/raw/develop/asset/demo.gif)
 
 
 ## Running Tests (future plan)

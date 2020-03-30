@@ -1,10 +1,9 @@
-var express = require('express');
-var api = require('./api');
-var auth = require('./auth/routers');
-var err = require('./middleware/err');
-var logger = require('./util/logger');
+const express = require('express');
+const api = require('./api');
+const auth = require('./auth/routers');
+const logger = require('./util/logger');
 
-var app = express();
+const app = express();
 require('./middleware')(app);
 
 app.use('/api', api);
@@ -19,8 +18,5 @@ app.use((err, req, res, next) => {
     logger.log('{' + err.stack + '}');
     res.status(500).send('Oops');
 });
-
-// Optional to se the error Middlware
-//app.use(err);
 
 module.exports = app;
