@@ -219,6 +219,9 @@ This project welcomes new ideas, you can reach me at this <a href="mailto:ahmadm
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change. 
 
+### When you are contributing
+Please comment the `postinstall` in `package.json` before you start development
+
 ## License Summary
 
 You can copy and paste the Apache 2.0 license summary below.
