@@ -161,19 +161,25 @@ You can choose NODE_ENV from one of the following options (development, producti
 
 ## Install
 
-1. Install with [NPM](https://www.npmjs.com/):
+1. Init with [NPM](https://www.npmjs.com/):
+
+```sh
+$ npm init
+```
+
+2. Install:
 
 ```sh
 $ npm install nodstarter
 ```
 
-2. Start:
+3. Start:
 
 ```sh
 $ npm start
 ```
 
-, or use short form command:
+, or use in one-line:
 
 ```sh
 $ npm init; npm install nodstarter; npm start
