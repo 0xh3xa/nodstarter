@@ -5,7 +5,6 @@
     "main": "index.js",
     "scripts": {
         "start": "nodemon index.js"
-        //"postinstall": "node scripts/post_install.js"
     },
     "repository": {
         "type": "git",
