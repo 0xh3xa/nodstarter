@@ -1,11 +1,11 @@
 # Nodstarter
 
-[![starter][starter-img]][starter-url]
-[![Nodejs][nodejs-img]][nodejs-url]
-[![NPM][npm-img]][npm-url]
-[![Linux][Linux-img]][Linux-url]
-[![Open Source Love][Open-Source-img]][Open-Source-url]
-[![License][License-img]][License-url]
+[![starter][starter-img]][nodestarter-url]
+[![Nodejs][nodejs-img]][nodestarter-url]
+[![NPM][npm-img]][nodestarter-url]
+[![Linux][Linux-img]][nodestarter-url]
+[![Open Source Love][Open-Source-img]][nodestarter-url]
+[![License][License-img]][nodestarter-url]
 
 Nodstarter is starter application to provide rapid rest APIs development, it offers pre-configured and secured routers using JWT, error middleware handler, MongoDB models, MongoDB connection and logger with APIs testing.
 This project aims to help writing the rest APIs backend quickly.
