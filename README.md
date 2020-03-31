@@ -1,11 +1,11 @@
 # Nodstarter
 
-[![starter](https://img.shields.io/static/v1?label=node&message=starter&color=blue&style=flat)](https://www.npmjs.com/package/nodstarter)
-[![Nodejs](https://img.shields.io/static/v1?label=Node&message=js&color=orange&style=flat)](https://www.npmjs.com/package/nodstarter)
-[![NPM](https://img.shields.io/static/v1?label=npm&message=6.14.2&color=pink&style=flat)](https://www.npmjs.com/package/nodstarter)
-[![Linux](https://img.shields.io/static/v1?label=Linux&message=pass&color=green&style=flat)](https://www.npmjs.com/package/nodstarter)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://www.npmjs.com/package/nodstarter)
-[![License](https://img.shields.io/static/v1?label=license&message=Apache2&color=tan&style=flat)](https://www.npmjs.com/package/nodstarter)
+[![starter][starter-img]][starter-url]
+[![Nodejs][nodejs-img]][nodejs-url]
+[![NPM][npm-img]][npm-url]
+[![Linux][Linux-img]][Linux-url]
+[![Open Source Love][Open-Source-img]][Open-Source-url]
+[![License][License-img]][License-url]
 
 Nodstarter is starter application to provide rapid rest APIs development, it offers pre-configured and secured routers using JWT, error middleware handler, MongoDB models, MongoDB connection and logger with APIs testing.
 This project aims to help writing the rest APIs backend quickly.
@@ -241,3 +241,16 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+[nodestarter-url]: https://www.npmjs.com/package/nodstarter
+[starter-img]: https://img.shields.io/static/v1?label=node&message=starter&color=blue&style=flat
+[starter-url]: [nodestarter-url]
+[nodejs-img]: https://img.shields.io/static/v1?label=Nodejs&message=12.0.0&color=orange&style=flat
+[nodejs-url]: [nodestarter-url]
+[npm-img]: https://img.shields.io/static/v1?label=npm&message=6.0.0&color=pink&style=flat
+[npm-url]: [nodestarter-url]
+[Linux-img]: https://img.shields.io/static/v1?label=Linux&message=pass&color=green&style=flat
+[Linux-url]: [nodestarter-url]
+[Open-Source-img]: https://badges.frapsoft.com/os/v1/open-source.svg?v=103
+[Open-Source-url]: [nodestarter-url]
+[License-img]: https://img.shields.io/static/v1?label=license&message=Apache2&color=tan&style=flat
+[License-url]: [nodestarter-url]
