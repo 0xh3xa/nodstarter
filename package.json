@@ -14,6 +14,10 @@
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
     },
+    "engines": {
+        "node": ">=12.0.0",
+        "npm": ">=6.0.0"
+      },
     "keywords": [
         "backend",
         "starter",
