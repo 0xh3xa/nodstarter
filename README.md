@@ -161,7 +161,7 @@ You can choose NODE_ENV from one of the following options (development, producti
 
 ## Install
 
-1. Init with [NPM](https://www.npmjs.com/):
+1. Init with [NPM][npmjs-url]:
 
 ```sh
 $ npm init
@@ -190,7 +190,7 @@ Please make sure that the `MongoDB daemon` is up and running
 
 ## How to use
 
-![Demo](https://github.com/ahmadmoawad/nodstarter/raw/develop/asset/demo.gif)
+![Demo][demo-url]
 
 
 ## Running Tests (future plan)
@@ -220,7 +220,8 @@ When contributing to this repository, please first discuss the change you wish t
 email, or any other method with the owners of this repository before making a change. 
 
 ### When you are contributing
-Please comment the `postinstall` in `package.json` before you start development
+- Please comment the `postinstall` in `package.json` before you start development
+- Or switch to `develop` branch
 
 ## License Summary
 
@@ -241,6 +242,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+[demo-url]: https://github.com/ahmadmoawad/nodstarter/raw/master/asset/demo.gif
 [nodestarter-url]: https://www.npmjs.com/package/nodstarter
 [starter-img]: https://img.shields.io/static/v1?label=node&message=starter&color=blue&style=flat
 [starter-url]: [nodestarter-url]
@@ -248,6 +250,7 @@ limitations under the License.
 [nodejs-url]: [nodestarter-url]
 [npm-img]: https://img.shields.io/static/v1?label=npm&message=6.0.0&color=pink&style=flat
 [npm-url]: [nodestarter-url]
+[npmjs-url]: https://www.npmjs.com/
 [Linux-img]: https://img.shields.io/static/v1?label=Linux&message=pass&color=green&style=flat
 [Linux-url]: [nodestarter-url]
 [Open-Source-img]: https://badges.frapsoft.com/os/v1/open-source.svg?v=103
