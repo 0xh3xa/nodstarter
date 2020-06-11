@@ -190,7 +190,7 @@ Please make sure that the `MongoDB daemon` is up and running
 
 ## How to use
 
-![Demo](https://github.com/ahmadmoawad/nodstarter/raw/develop/asset/demo.gif)
+![Demo](https://github.com/ahmadmoawad/nodstarter/blob/master/asset/demo.gif)
 
 
 ## Running Tests (future plan)
