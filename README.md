@@ -220,7 +220,8 @@ When contributing to this repository, please first discuss the change you wish t
 email, or any other method with the owners of this repository before making a change. 
 
 ### When you are contributing
-Please comment the `postinstall` in `package.json` before you start development
+- Please comment the `postinstall` in `package.json` before you start development
+- Or switch to `develop` branch
 
 ## License Summary
 
