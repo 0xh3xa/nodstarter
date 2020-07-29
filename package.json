@@ -4,7 +4,8 @@
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon index.js"
+        "start": "nodemon index.js",
+        "postinstall": "node scripts/post_install.js"
     },
     "repository": {
         "type": "git",
