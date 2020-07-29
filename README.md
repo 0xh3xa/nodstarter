@@ -4,6 +4,7 @@
 [![Nodejs][nodejs-img]][nodestarter-url]
 [![NPM][npm-img]][nodestarter-url]
 [![Linux][Linux-img]][nodestarter-url]
+[![Mac][Macos-img]][nodestarter-url]
 [![Open Source Love][Open-Source-img]][nodestarter-url]
 [![License][License-img]][nodestarter-url]
 
@@ -244,16 +245,17 @@ limitations under the License.
 ```
 [demo-url]: https://github.com/ahmadmoawad/nodstarter/raw/master/asset/demo.gif
 [nodestarter-url]: https://www.npmjs.com/package/nodstarter
-[starter-img]: https://img.shields.io/static/v1?label=node&message=starter&color=blue&style=flat
+[starter-img]: https://img.shields.io/static/v1?label=Node&message=Starter&color=blue&style=flat
 [starter-url]: [nodestarter-url]
 [nodejs-img]: https://img.shields.io/static/v1?label=Nodejs&message=12.0.0&color=orange&style=flat
 [nodejs-url]: [nodestarter-url]
-[npm-img]: https://img.shields.io/static/v1?label=npm&message=6.0.0&color=pink&style=flat
+[npm-img]: https://img.shields.io/static/v1?label=NPM&message=6.0.0&color=pink&style=flat
 [npm-url]: [nodestarter-url]
 [npmjs-url]: https://www.npmjs.com/
-[Linux-img]: https://img.shields.io/static/v1?label=Linux&message=pass&color=green&style=flat
+[Linux-img]: https://img.shields.io/static/v1?label=Linux&message=Pass&color=green&style=flat
+[Macos-img]: https://img.shields.io/static/v1?label=MacOS&message=Pass&color=green&style=flat
 [Linux-url]: [nodestarter-url]
 [Open-Source-img]: https://badges.frapsoft.com/os/v1/open-source.svg?v=103
 [Open-Source-url]: [nodestarter-url]
-[License-img]: https://img.shields.io/static/v1?label=license&message=Apache2&color=tan&style=flat
+[License-img]: https://img.shields.io/static/v1?label=License&message=Apache2&color=tan&style=flat
 [License-url]: [nodestarter-url]
