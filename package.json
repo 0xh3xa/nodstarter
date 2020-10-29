@@ -36,7 +36,7 @@
         "runner"
     ],
     "author": "Ahmad M.",
-    "license": "Apache License 2.0",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/ahmadmoawad/nodstarter/issues"
     },
