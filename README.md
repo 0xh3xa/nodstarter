@@ -295,8 +295,8 @@ See <a href="https://github.com/ahmadmoawad/nodstarter/blob/master/.github/LICEN
 [npm-img]: https://img.shields.io/static/v1?label=npm&message=6.0.0&color=pink&style=for-the-badge
 [npm-url]: [nodestarter-url]
 [npmjs-url]: https://www.npmjs.com/
-[linux-img]: https://img.shields.io/static/v1?label=linux&message=passing&color=green&style=for-the-badge&logo=linux
-[macos-img]: https://img.shields.io/static/v1?label=macos&message=passing&color=green&style=for-the-badge&logo=apple
+[linux-img]: https://img.shields.io/static/v1?label=linux&message=passing&color=light-green&style=for-the-badge&logo=linux
+[macos-img]: https://img.shields.io/static/v1?label=macos&message=passing&color=light-green&style=for-the-badge&logo=apple
 [linux-url]: [nodestarter-url]
-[license-img]: https://img.shields.io/github/license/ahmadmoawad/nodstarter?style=for-the-badge
+[license-img]: https://img.shields.io/github/license/ahmadmoawad/nodstarter?color=pink&style=for-the-badge
 [license-url]: [nodestarter-url]
