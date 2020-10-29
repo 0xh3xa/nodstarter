@@ -298,5 +298,5 @@ See <a href="https://github.com/ahmadmoawad/nodstarter/blob/master/.github/LICEN
 [linux-img]: https://img.shields.io/static/v1?label=linux&message=passing&color=light-green&style=for-the-badge&logo=linux
 [macos-img]: https://img.shields.io/static/v1?label=macos&message=passing&color=light-green&style=for-the-badge&logo=apple
 [linux-url]: [nodestarter-url]
-[license-img]: https://img.shields.io/github/license/ahmadmoawad/nodstarter?color=pink&style=for-the-badge
+[license-img]: https://img.shields.io/badge/LICENSE-MIT-brightgreen?color=pink&style=for-the-badge
 [license-url]: [nodestarter-url]
