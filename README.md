@@ -8,10 +8,11 @@
 <div align="center">
 
 [![Build Status][build-img]][nodestarter-url]
-[![Dependency Status][depend-img]][nodestarter-url]
 [![Linux][linux-img]][nodestarter-url]
 [![Mac][macos-img]][nodestarter-url]
-[![Known Vulnerabilities](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dwyl/hapi-auth-jwt2?targetFile=package.json)
+[![Known Vulnerabilities][vul-img]][vul-url]
+
+
 [![License][license-img]][nodestarter-url]
 
 </div>
@@ -281,19 +282,21 @@ See <a href="https://github.com/ahmadmoawad/nodstarter/blob/master/.github/LICEN
 
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd9%2FNode.js_logo.svg%2F1920px-Node.js_logo.svg.png&f=1&nofb=1" alt="nodejs" width="200" height="110"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcamo.githubusercontent.com%2Ffc61dcbdb7a6e49d3adecc12194b24ab20dfa25b%2F68747470733a2f2f692e636c6f756475702e636f6d2f7a6659366c4c376546612d3330303078333030302e706e67&f=1&nofb=1" alt="nodejs" width="200" height="110"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/13700/35731649-652807e8-080e-11e8-88fd-1b2f6d553b2d.png" alt="nodejs" width="120" height="110"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fthumb%2F4%2F45%2FMongoDB-Logo.svg%2F320px-MongoDB-Logo.svg.png&f=1&nofb=1" alt="nodejs" width="200" height="110"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmongodb-tools.com%2Fimg%2Fmongoose.png&f=1&nofb=1" alt="nodejs" width="200" height="110"/>
 
+[vul-img]: https://img.shields.io/snyk/vulnerabilities/github/ahmadmoawad/nodstarter?style=for-the-badge
+[vul-url]: https://snyk.io/test/github/ahmadmoawad/nodstarter
 [demo-url]: https://github.com/ahmadmoawad/nodstarter/raw/master/asset/demo.gif
-[build-img]: https://img.shields.io/static/v1?label=build&message=passing&color=light-green&style=flat
-[depend-img]: https://img.shields.io/static/v1?label=dependencies&message=passing&color=light-green&style=flat
+[build-img]: https://img.shields.io/github/workflow/status/ahmadmoawad/nodstarter/Node.js%20CI/master
+[depend-img]: https://img.shields.io/static/v1?label=dependencies&message=passing&color=light-green&style=flathttps://img.shields.io/david/ahmadmoawad/nodstarter
 [nodestarter-url]: https://www.npmjs.com/package/nodstarter
-[starter-img]: https://img.shields.io/static/v1?label=nod&message=starter&color=blue&style=flat
+[starter-img]: https://img.shields.io/static/v1?label=nod&message=starter&color=blue&style=for-the-badge
 [starter-url]: [nodestarter-url]
-[nodejs-img]: https://img.shields.io/static/v1?label=nodejs&message=12.0.0&color=orange&style=flat
+[nodejs-img]: https://img.shields.io/static/v1?label=nodejs&message=12.0.0&color=orange&style=for-the-badge
 [nodejs-url]: [nodestarter-url]
-[npm-img]: https://img.shields.io/static/v1?label=npm&message=6.0.0&color=pink&style=flat
+[npm-img]: https://img.shields.io/static/v1?label=npm&message=6.0.0&color=pink&style=for-the-badge
 [npm-url]: [nodestarter-url]
 [npmjs-url]: https://www.npmjs.com/
-[linux-img]: https://img.shields.io/static/v1?label=linux&message=passing&color=green&style=flat
-[macos-img]: https://img.shields.io/static/v1?label=macos&message=passing&color=green&style=flat
+[linux-img]: https://img.shields.io/static/v1?label=linux&message=passing&color=green&style=for-the-badge&logo=linux
+[macos-img]: https://img.shields.io/static/v1?label=macos&message=passing&color=green&style=for-the-badge&logo=apple
 [linux-url]: [nodestarter-url]
-[license-img]: https://img.shields.io/github/license/ahmadmoawad/nodstarter
+[license-img]: https://img.shields.io/github/license/ahmadmoawad/nodstarter?style=for-the-badge
 [license-url]: [nodestarter-url]
