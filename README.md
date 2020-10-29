@@ -1,7 +1,7 @@
 # Nodstarter
 
 <p align="center">
-      <img src="https://github.com/ahmadmoawad/nodstarter/blob/master/asset/logo_1.png" alt="nodstarter" width="150" height="150"/>
+      <img src="https://github.com/ahmadmoawad/nodstarter/raw/master/asset/logo_1.png" alt="nodstarter" width="150" height="150"/>
 </p>
 <br/>
 
