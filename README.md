@@ -285,7 +285,7 @@ See <a href="https://github.com/ahmadmoawad/nodstarter/blob/master/.github/LICEN
 [vul-img]: https://img.shields.io/snyk/vulnerabilities/github/ahmadmoawad/nodstarter?style=for-the-badge
 [vul-url]: https://snyk.io/test/github/ahmadmoawad/nodstarter
 [demo-url]: https://github.com/ahmadmoawad/nodstarter/raw/master/asset/demo.gif
-[build-img]: https://img.shields.io/github/workflow/status/ahmadmoawad/nodstarter/Node.js%20CI/master
+[build-img]: https://img.shields.io/github/workflow/status/ahmadmoawad/nodstarter/Node.js%20CI/master?style=for-the-badge&logo=Travis%20CI
 [depend-img]: https://img.shields.io/static/v1?label=dependencies&message=passing&color=light-green&style=flathttps://img.shields.io/david/ahmadmoawad/nodstarter
 [nodestarter-url]: https://www.npmjs.com/package/nodstarter
 [starter-img]: https://img.shields.io/static/v1?label=nod&message=starter&color=blue&style=for-the-badge
