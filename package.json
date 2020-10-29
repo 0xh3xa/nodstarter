@@ -55,8 +55,8 @@
         "morgan": "^1.9.1"
     },
     "devDependencies": {
-        "chai": "^4.2.0",
-        "mocha": "^7.1.0",
-        "supertest": "^4.0.2"
+        "chai": "4.2.0",
+        "mocha": "7.2.0",
+        "supertest": "4.0.2"
     }
 }
