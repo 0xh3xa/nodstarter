@@ -1,6 +1,6 @@
 {
     "name": "nodstarter",
-    "version": "1.0.22",
+    "version": "1.0.23",
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
@@ -17,7 +17,7 @@
     "engines": {
         "node": ">=12.0.0",
         "npm": ">=6.0.0"
-      },
+    },
     "keywords": [
         "backend",
         "starter",
