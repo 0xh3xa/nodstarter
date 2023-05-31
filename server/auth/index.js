@@ -37,7 +37,7 @@ exports.verifyUser = () => {
         var password = req.body.password;
 
         if (!username || !password) {
-            res.status(400).send('You need a username ans password');
+            res.status(400).send('You need a username and password');
             return;
         }
 
@@ -47,9 +47,11 @@ exports.verifyUser = () => {
             .then((user) => {
                 logger.log('the selected user from DB: ' + user);
                 if (!user) {
-                    res.status(401).send('No user with the given username');
+                    logger.log('No user with the given username');
+                    res.status(401).send('Invalid username or password');
                 } else if (!user.authenticate(password)) {
-                    res.status(401).send('wrong password');
+                    logger.log('Invalid password');
+                    res.status(401).send('Invalid username or password');
                 } else {
                     req.user = user;
                     next();
