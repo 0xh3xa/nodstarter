@@ -1,6 +1,6 @@
 {
     "name": "nodstarter",
-    "version": "1.1.11",
+    "version": "1.0.21",
     "description": "starter application for Node.js",
     "main": "index.js",
     "scripts": {
@@ -11,8 +11,12 @@
         "url": "git+https://github.com/ahmadmoawad/nodstarter.git"
     },
     "publishConfig": {
-        "registry": "https://npm.pkg.github.com/@ahmadmoawad"
+        "registry": "https://registry.npmjs.org/"
     },
+    "engines": {
+        "node": ">=12.0.0",
+        "npm": ">=6.0.0"
+      },
     "keywords": [
         "backend",
         "starter",
@@ -31,15 +35,13 @@
         "runner"
     ],
     "author": "Ahmad M.",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
-        "author": "Ahmad M.",
-        "email": "ahmadmoawad2@yahoo.com",
         "url": "https://github.com/ahmadmoawad/nodstarter/issues"
     },
     "homepage": "https://github.com/ahmadmoawad/nodstarter#readme",
     "dependencies": {
-        "bcrypt": "^4.0.1",
+        "bcrypt": ">=5.0.0",
         "body-parser": "^1.19.0",
         "colors": "^1.4.0",
         "cors": "^2.8.5",

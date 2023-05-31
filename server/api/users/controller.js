@@ -57,10 +57,14 @@ exports.post = (req, res, next) => {
         if (err) {
             next(err);
         }
-        var token = signToken(user._id);
-        res.json({
-            token: token
-        });
+        try{
+          var token = signToken(user._id);
+          res.json({
+              token: token
+          });
+      }catch(err){
+        logger.log(err.message)
+      }
     });
 };
 
