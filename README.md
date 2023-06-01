@@ -1,7 +1,7 @@
 # Nodstarter
 
 <p align="center">
-      <img src="https://github.com/ahmadmoawad/nodstarter-replica/blob/master/asset/logo_1.png" alt="nodstarter" width="150" height="150"/>
+      <img src="https://github.com/ahmadmoaw/nodstarter/blob/master/asset/logo_1.png" alt="nodstarter" width="150" height="150"/>
 </p>
 <br/>
 
@@ -289,7 +289,7 @@ See [CONTRIBUTING.md](.github/CONTRIBUTING.md)
 
 ## License summary
 
-See <a href="https://github.com/ahmadmoawad/nodstarter-replica/blob/master/.github/LICENSE"/>MIT License</a>
+See <a href="https://github.com/ahmadmoaw/nodstarter/blob/master/.github/LICENSE"/>MIT License</a>
 
 ## NPM statistics
 
@@ -299,7 +299,7 @@ See <a href="https://github.com/ahmadmoawad/nodstarter-replica/blob/master/.gith
 
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd9%2FNode.js_logo.svg%2F1920px-Node.js_logo.svg.png&f=1&nofb=1" alt="nodejs" width="200" height="110"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcamo.githubusercontent.com%2Ffc61dcbdb7a6e49d3adecc12194b24ab20dfa25b%2F68747470733a2f2f692e636c6f756475702e636f6d2f7a6659366c4c376546612d3330303078333030302e706e67&f=1&nofb=1" alt="nodejs" width="200" height="110"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/13700/35731649-652807e8-080e-11e8-88fd-1b2f6d553b2d.png" alt="nodejs" width="120" height="110"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fthumb%2F4%2F45%2FMongoDB-Logo.svg%2F320px-MongoDB-Logo.svg.png&f=1&nofb=1" alt="nodejs" width="200" height="110"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmongodb-tools.com%2Fimg%2Fmongoose.png&f=1&nofb=1" alt="nodejs" width="200" height="110"/>
 
-[demo-url]: https://github.com/ahmadmoawad/nodstarter-replica/raw/master/asset/demo.gif
+[demo-url]: https://github.com/ahmadmoaw/nodstarter/raw/master/asset/demo.gif
 [build-img]: https://img.shields.io/static/v1?label=build&message=passing&color=light-green&style=flat
 [depend-img]: https://img.shields.io/static/v1?label=dependencies&message=passing&color=light-green&style=flat
 [nodestarter-url]: https://www.npmjs.com/package/nodstarter
