@@ -1,7 +1,7 @@
 # Nodstarter
 
 <p align="center">
-      <img src="https://github.com/ahmadmoaw/nodstarter-replica/blob/master/asset/logo_1.png" alt="nodstarter" width="150" height="150"/>
+      <img src="https://github.com/ahmadmoaw/nodstarter/blob/master/asset/logo_1.png" alt="nodstarter" width="150" height="150"/>
 </p>
 <br/>
 
@@ -289,7 +289,7 @@ See [CONTRIBUTING.md](.github/CONTRIBUTING.md)
 
 ## License summary
 
-See <a href="https://github.com/ahmadmoaw/nodstarter-replica/blob/master/.github/LICENSE"/>MIT License</a>
+See <a href="https://github.com/ahmadmoaw/nodstarter/blob/develop/LICENSE"/>MIT License</a>
 
 ## NPM statistics
 
