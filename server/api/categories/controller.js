@@ -27,14 +27,14 @@ exports.get = (req, res, next) => {
 };
 
 exports.getOne = (req, res, next) => {
-    var category = req.category;
+    let category = req.category;
     res.json(category);
 };
 
 exports.put = (req, res, next) => {
-    var category = req.category;
+    let category = req.category;
 
-    var updatedcategory = req.body;
+    let updatedcategory = req.body;
 
     _.merge(category, updatedcategory);
 
@@ -48,7 +48,7 @@ exports.put = (req, res, next) => {
 };
 
 exports.post = (req, res, next) => {
-    var newcategory = req.body;
+    let newcategory = req.body;
     Category.create(newcategory)
         .then((category) => {
             return res.json(category);
