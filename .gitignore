@@ -1,3 +1,5 @@
+/node_modules
+.env
 # Editor dependent folder
 .idea
 .vscode
