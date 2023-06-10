@@ -289,7 +289,7 @@ See [CONTRIBUTING.md](.github/CONTRIBUTING.md)
 
 ## License summary
 
-See <a href="https://github.com/ahmadmoaw/nodstarter/blob/develop/LICENSE"/>MIT License</a>
+See <a href="https://github.com/ahmadmoaw/nodstarter/blob/develop/LICENSE"/>License</a>
 
 ## NPM statistics
 

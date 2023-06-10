@@ -1,5 +1,6 @@
 /node_modules
 .env
+
 # Editor dependent folder
 .idea
 .vscode
@@ -138,3 +139,4 @@ coverage/
 .yarn/install-state.gz
 .pnp.*
 Footer
+
