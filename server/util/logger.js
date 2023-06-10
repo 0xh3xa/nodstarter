@@ -5,7 +5,7 @@ const loggerApply = console.log.bind(console);
 
 const logger = {
     log: (input) => {
-      var args = '';
+      let args = '';
       if(input && typeof(input)==='string'){
          args = input.trim().split(" ")
         .map(function (arg) {
@@ -15,7 +15,7 @@ const logger = {
       }else {
            args = _.toArray(input)
            .map(function (arg) {
-             var string = JSON.stringify(arg);
+             let string = JSON.stringify(arg);
              return string.yellow;
             });
           }
