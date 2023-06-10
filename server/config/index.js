@@ -16,7 +16,7 @@ const config = {
 process.env.NODE_ENV = process.env.NODE_ENV || config.dev;
 config.env = process.env.NODE_ENV;
 
-var envConfig;
+let envConfig;
 try {
     envConfig = require('./' + config.env);
     envConfig = envConfig || {};

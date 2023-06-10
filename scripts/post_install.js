@@ -6,11 +6,11 @@ const parent_path = path.resolve(__dirname, '..'); // nodstarter folder inside n
 const project_path = path.resolve(__dirname, '../../../'); // user project folder
 const script_path = project_path + "/scripts";
 
-var programmer_package_json = require(project_path+'/package.json')
+let programmer_package_json = require(project_path+'/package.json')
 
-var updatePackageJson = function(){
+let updatePackageJson = function(){
 	const json_content = fs.readFileSync(package_json_path, 'utf8');
-	var pjson = JSON.parse(json_content);
+	let pjson = JSON.parse(json_content);
 
 	pjson.description = programmer_package_json.description || '';
 	pjson.name = programmer_package_json.name || '';
@@ -18,7 +18,7 @@ var updatePackageJson = function(){
 	pjson.version = programmer_package_json.version || '';
 	pjson.repository = programmer_package_json.repository || '';
 	pjson.license = programmer_package_json.license || 'ISC';
-  pjson.bugs = '';
+    pjson.bugs = '';
 	pjson.homepage = '';
 
 	delete pjson.scripts.postinstall;
@@ -38,7 +38,7 @@ var updatePackageJson = function(){
 	fs.writeFileSync(package_json_path, JSON.stringify(pjson, null, 4), 'utf8');
 };
 
-var mkdir = function(dir) {
+let mkdir = function(dir) {
 	try {
 		fs.mkdirSync(dir, 0755);
 	} catch(err) {
@@ -48,12 +48,12 @@ var mkdir = function(dir) {
 	}
 };
 
-var rmDirRecursive = function(dir) {
+let rmDirRecursive = function(dir) {
 	if (fs.existsSync(dir)) {
-		var list = fs.readdirSync(dir);
-		for(var i = 0; i < list.length; i++) {
-			var filename = path.join(dir, list[i]);
-			var stat = fs.lstatSync(filename);
+		let list = fs.readdirSync(dir);
+		for(let i = 0; i < list.length; i++) {
+			let filename = path.join(dir, list[i]);
+			let stat = fs.lstatSync(filename);
 			if(filename == "." || filename == "..") {
 			} else if(stat.isDirectory()) {
 				rmDirRecursive(filename);
@@ -64,22 +64,22 @@ var rmDirRecursive = function(dir) {
 		try{
 			fs.rmdirSync(dir);
 		}catch(err){
-			console.log(err)
+			console.log(err);
 		}
 	} else {
 		console.warn("Warn: " + dir + " not exists");
 	}
 };
 
-var copyDirRecursive = function(src, dest) {
+let copyDirRecursive = function(src, dest) {
 	mkdir(dest);
-	var files = fs.readdirSync(src);
-	for(var i = 0; i < files.length; i++) {
-		var current = fs.lstatSync(path.join(src, files[i]));
+	let files = fs.readdirSync(src);
+	for(let i = 0; i < files.length; i++) {
+		let current = fs.lstatSync(path.join(src, files[i]));
 		if(current.isDirectory()) {
 			copyDirRecursive(path.join(src, files[i]), path.join(dest, files[i]));
 		} else if(current.isSymbolicLink()) {
-			var symlink = fs.readlinkSync(path.join(src, files[i]));
+			let symlink = fs.readlinkSync(path.join(src, files[i]));
 			fs.symlinkSync(symlink, path.join(dest, files[i]));
 		} else {
 			copyFile(path.join(src, files[i]), path.join(dest, files[i]));
@@ -87,13 +87,13 @@ var copyDirRecursive = function(src, dest) {
 	}
 };
 
-var copyFile = function(src, dest) {
-	fs.createReadStream(src).pipe(fs.createWriteStream(dest))
+let copyFile = function(src, dest) {
+	fs.createReadStream(src).pipe(fs.createWriteStream(dest));
 };
 
 copyDirRecursive(parent_path, project_path);
 
-updatePackageJson()
+updatePackageJson();
 
 rmDirRecursive(parent_path);
 

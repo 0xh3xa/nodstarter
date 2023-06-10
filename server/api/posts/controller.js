@@ -3,7 +3,7 @@ const _ = require('lodash');
 const logger = require('../../util/logger');
 
 exports.params = (req, res, next, id) => {
-    post.findById(id)
+    Post.findById(id)
         .populate('author', 'username')
         .exec()
         .then((post) => {
@@ -31,14 +31,14 @@ exports.get = (req, res, next) => {
 };
 
 exports.getOne = (req, res, next) => {
-    var post = req.post;
+   let post = req.post;
     res.json(post);
 };
 
 exports.put = (req, res, next) => {
-    var post = req.post;
+   let post = req.post;
 
-    var updatedpost = req.body;
+   let updatedpost = req.body;
 
     _.merge(post, updatedpost);
 
@@ -52,7 +52,7 @@ exports.put = (req, res, next) => {
 };
 
 exports.post = (req, res, next) => {
-    var newpost = req.body;
+   let newpost = req.body;
     Post.create(newpost)
         .then((post) => {
             return res.json(post);

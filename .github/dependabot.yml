@@ -6,6 +6,10 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
+    target-branch: "develop"
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+      day: "sunday"
+    labels:
+      - "npm dependencies"
