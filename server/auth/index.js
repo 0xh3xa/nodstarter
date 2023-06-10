@@ -1,4 +1,4 @@
-const { expressjwt: jwt } = require("express-jwt");
+const { expressjwt: jwt } = require('express-jwt');
 const config = require('../config');
 const logger = require('../util/logger');
 const jwttoken = require('jsonwebtoken');
@@ -36,8 +36,6 @@ exports.verifyUser = () => {
     return (req, res, next) => {
         var username = req.body.username;
         var password = req.body.password;
-
-        console.log(username,password);
 
         if (!username || !password) {
             res.status(400).send('You need a username and password');
