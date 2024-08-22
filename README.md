@@ -1,81 +1,85 @@
-# Nodstarter
+## Nodstarter
 
 <p align="center">
-      <img src="https://github.com/ahmadmoaw/nodstarter/blob/master/asset/logo_1.png" alt="nodstarter" width="150" height="150"/>
+  <img src="https://github.com/ahmadmoaw/nodstarter/blob/master/asset/logo_1.png" alt="nodstarter" width="150" height="150"/>
 </p>
 <br/>
 
-<div align="center">
-
-[![Build Status][build-img]][nodestarter-url]
-[![Dependency Status][depend-img]][nodestarter-url]
-[![Linux][linux-img]][nodestarter-url]
-[![Mac][macos-img]][nodestarter-url]
-[![Known Vulnerabilities](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dwyl/hapi-auth-jwt2?targetFile=package.json)
-[![License][license-img]][nodestarter-url]
-
+<div>
+      <p>
+            Nodstarter is a starter application for Node.js designed to facilitate rapid RESTful API development. It provides pre-configured, secured routers, services, and models to streamline the creation of secure and scalable applications.
+      </p>
 </div>
 
-starter application for Node.js to provide rapid Restful APIs development, pre-configured, secured routers, services, and models.
+<div align="center">
+  <a href="https://www.npmjs.com/package/nodstarter">
+    <img src="https://img.shields.io/static/v1?label=build&message=passing&color=light-green&style=flat" alt="Build Status" />
+  </a>
+  <a href="https://www.npmjs.com/package/nodstarter">
+    <img src="https://img.shields.io/static/v1?label=dependencies&message=passing&color=light-green&style=flat" alt="Dependency Status" />
+  </a>
+  <a href="https://www.npmjs.com/package/nodstarter">
+    <img src="https://img.shields.io/static/v1?label=linux&message=passing&color=green&style=flat" alt="Linux" />
+  </a>
+  <a href="https://www.npmjs.com/package/nodstarter">
+    <img src="https://img.shields.io/static/v1?label=macos&message=passing&color=green&style=flat" alt="Mac" />
+  </a>
+  <a href="https://snyk.io/test/github/dwyl/hapi-auth-jwt2?targetFile=package.json">
+    <img src="https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" />
+  </a>
+  <a href="https://www.npmjs.com/package/nodstarter">
+    <img src="https://img.shields.io/github/license/ahmadmoaw/nodstarter" alt="License" />
+  </a>
+</div>
 
-## Table of contents
+## Table of Contents
 
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Initial Example](#initial-example)
-* [Project structure](#project-structure)
-* [Code example](#code-example)
-* [Sign in API call example](#sign-in-api-call-example)
-* [Environment variables](#environment-variables)
-* [Setup](#setup)
-* [Before running](#before-running)
-* [Demo](#demo)
-* [New Ideas](#new-ideas)
-* [Future plans](#future-plans)
-* [Contributing](#contributing)
-* [License summary](#license-summary)
-* [NPM statistics](#npm-statistics)
-* [Project based](#project-based)
+- [General Info](#general-info)
+- [Technologies](#technologies)
+- [Initial Code](#initial-code)
+- [Project Structure](#project-structure)
+- [Code Example](#code-example)
+- [Sign In API Call Example](#sign-in-api-call-example)
+- [Environment Variables](#environment-variables)
+- [Setup](#setup)
+- [Before Running](#before-running)
+- [Demo](#demo)
+- [New Ideas](#new-ideas)
+- [Future Plans](#future-plans)
+- [Contributing](#contributing)
+- [License Summary](#license-summary)
+- [NPM Statistics](#npm-statistics)
+- [Project Based](#project-based)
 
-## General info
+## General Info
 
-Nodstarter is a starter application for Node.js to provide rapid Restful APIs development, pre-configured, secured routers, services, and models using different libraries.
-
-This project aims to help writing the secure rest APIs quickly and provide a skeleton to the node.js project to minimize the configuration and avoid starting from scratch.
+Nodstarter provides a framework for developing secure RESTful APIs quickly. It includes pre-configured routers, services, and models, allowing developers to focus on writing business logic rather than setup and configuration.
 
 ## Technologies
 
-01. Node.js
-02. Express framework
-03. MongoDB
-04. Mongoose ORM
-05. Lodash
-06. Morgan middleware
-07. Body-parser middleware
-08. Method-override
-09. Bcrypt
-10. Express-jwt
-11. Jsonwebtoken
-12. Cors middleware
-13. Nodemon
-14. Testing libraries: Supertest, Chai and Mocha
+- **Node.js**: JavaScript runtime for building scalable network applications.
+- **Express**: Web framework for Node.js.
+- **MongoDB**: NoSQL database for storing data.
+- **Mongoose**: ORM for MongoDB.
+- **Lodash**: Utility library for JavaScript.
+- **Morgan**: HTTP request logger middleware.
+- **Body-parser**: Middleware for parsing request bodies.
+- **Method-override**: Middleware to allow HTTP verbs such as PUT or DELETE.
+- **Bcrypt**: Library for hashing passwords.
+- **Express-jwt**: Middleware for JWT authentication.
+- **Jsonwebtoken**: Library for signing and verifying JSON Web Tokens.
+- **Cors**: Middleware for enabling Cross-Origin Resource Sharing.
+- **Nodemon**: Utility for auto-reloading the server during development.
+- **Testing Libraries**: Supertest, Chai, and Mocha for testing.
 
-## Initial code
+## Initial Code
 
-Nodstarter contains 3 models with the relationship to `users`, `posts` and `categories`, each of them contains `router`, `controller`, and `model`
+Nodstarter includes models for `users`, `posts`, and `categories`, with predefined relationships:
 
-- Router: Already defined routers you can change to what you want
-- Controller: CRUD operation for the models
-- Model: Mongo representation for three models with the relationship:
+- **User to Posts**: One-to-many.
+- **Posts to Categories**: Many-to-many.
 
-  * User to Posts one-to-many
-  * Posts to Categories many-to-many
-
-So this is the basis for a node.js project you can start with any of them and change the router to your routes, and use the controller.
-
-For the model also you can update them and the relationship is already this you can copy-and-paste.
-
-In future plans ability to use a command line to create a router, controller, model like Ruby-on-Rails.
+These components are organized into routers, controllers, and models to provide a clear structure for API development.
 
 ## Project structure
 
@@ -117,7 +121,7 @@ In future plans ability to use a command line to create a router, controller, mo
         └── logger.js
 ```
 
-## AUTH Code snippet
+## Code example
 
 This is the configuration to the JWT token to the user
 
