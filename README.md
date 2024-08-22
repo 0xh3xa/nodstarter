@@ -1,7 +1,7 @@
 ## Nodstarter
 
 <p align="center">
-  <img src="https://github.com/ahmadmoaw/nodstarter/blob/master/asset/logo_1.png" alt="nodstarter" width="150" height="150"/>
+  <img src="https://github.com/0xh3xa/nodstarter/blob/master/asset/logo_1.png" alt="nodstarter" width="150" height="150"/>
 </p>
 <br/>
 
@@ -28,7 +28,7 @@
     <img src="https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" />
   </a>
   <a href="https://www.npmjs.com/package/nodstarter">
-    <img src="https://img.shields.io/github/license/ahmadmoaw/nodstarter" alt="License" />
+    <img src="https://img.shields.io/github/license/0xh3xa/nodstarter" alt="License" />
   </a>
 </div>
 
@@ -293,7 +293,7 @@ See [CONTRIBUTING.md](.github/CONTRIBUTING.md)
 
 ## License summary
 
-See <a href="https://github.com/ahmadmoaw/nodstarter/blob/develop/LICENSE"/>License</a>
+See <a href="https://github.com/0xh3xa/nodstarter/blob/develop/LICENSE"/>License</a>
 
 ## NPM statistics
 
@@ -301,9 +301,9 @@ See <a href="https://github.com/ahmadmoaw/nodstarter/blob/develop/LICENSE"/>Lice
 
 ## Project based
 
-<a href="https://github.com/ahmadmoaw/nodstarter"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd9%2FNode.js_logo.svg%2F1920px-Node.js_logo.svg.png&f=1&nofb=1" alt="nodejs" width="200" height="110"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ahmadmoaw/nodstarter"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcamo.githubusercontent.com%2Ffc61dcbdb7a6e49d3adecc12194b24ab20dfa25b%2F68747470733a2f2f692e636c6f756475702e636f6d2f7a6659366c4c376546612d3330303078333030302e706e67&f=1&nofb=1" alt="nodejs" width="250" height="110"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/ahmadmoaw/nodstarter"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/768px-MongoDB_Logo.svg.png?20190626143224" alt="nodejs" width="250" height="110"/></a>
+<a href="https://github.com/0xh3xa/nodstarter"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd9%2FNode.js_logo.svg%2F1920px-Node.js_logo.svg.png&f=1&nofb=1" alt="nodejs" width="200" height="110"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/0xh3xa/nodstarter"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcamo.githubusercontent.com%2Ffc61dcbdb7a6e49d3adecc12194b24ab20dfa25b%2F68747470733a2f2f692e636c6f756475702e636f6d2f7a6659366c4c376546612d3330303078333030302e706e67&f=1&nofb=1" alt="nodejs" width="250" height="110"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/0xh3xa/nodstarter"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/768px-MongoDB_Logo.svg.png?20190626143224" alt="nodejs" width="250" height="110"/></a>
 
-[demo-url]: https://github.com/ahmadmoaw/nodstarter/raw/master/asset/demo.gif
+[demo-url]: https://github.com/0xh3xa/nodstarter/raw/master/asset/demo.gif
 [build-img]: https://img.shields.io/static/v1?label=build&message=passing&color=light-green&style=flat
 [depend-img]: https://img.shields.io/static/v1?label=dependencies&message=passing&color=light-green&style=flat
 [nodestarter-url]: https://www.npmjs.com/package/nodstarter
@@ -317,5 +317,5 @@ See <a href="https://github.com/ahmadmoaw/nodstarter/blob/develop/LICENSE"/>Lice
 [linux-img]: https://img.shields.io/static/v1?label=linux&message=passing&color=green&style=flat
 [macos-img]: https://img.shields.io/static/v1?label=macos&message=passing&color=green&style=flat
 [linux-url]: [nodestarter-url]
-[license-img]: https://img.shields.io/github/license/ahmadmoaw/nodstarter
+[license-img]: https://img.shields.io/github/license/0xh3xa/nodstarter
 [license-url]: [nodestarter-url]
